@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/customPrimaryDark"
+    tools:context="com.example.philip.guessfourgame.GameMainActivity">
+
+    <LinearLayout
+        android:id="@+id/fragments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/start_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/customRed"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <fragment
+                android:id="@+id/player1_fragment"
+                android:name="com.example.philip.guessfourgame.PlayerOneFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/player_frame_layout"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/customGreen"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <fragment
+                android:id="@+id/player2_fragment"
+                android:name="com.example.philip.guessfourgame.PlayerTwoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/player_frame_layout"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:background="@color/customPrimaryLight"
+        android:padding="0dp"
+        android:text="@string/start"
+        />
+
+
+</RelativeLayout>

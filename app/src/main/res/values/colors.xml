@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="customRed">#f06292</color>
+    <color name="customGreen">#ba68c8</color>
+    <color name="customYellow">#FFE599</color>
+    <color name="customBlue">#A4C2F4</color>
+    <color name="customPrimary">#64b5f6</color>
+    <color name="customPrimaryDark">#2286c3</color>
+    <color name="customPrimaryLight">#9be7ff</color>
+</resources>
